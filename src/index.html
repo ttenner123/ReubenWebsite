@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- data-ng-app ties the module ("app" in "app.js") to the entire document. This could certainly be moved (i.e. applied to one div, large or small) but for now we'll likely only need the one module. -->
+<html lang="en" data-ng-app="app" >
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Herfindahl For Senate</title>
+    <!-- Include stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- TODO: Get favicon based on logo -->
+
+</head>
+<body>
+    <header>
+        <img class="navBarImg" src="Images/ReubenLogo.jpg" alt="logo">
+        <ul class="navBar1">
+            <!-- a 50% left padding is applied to the first link to get it to be on the right side of the screen/image. -->
+            <li class="navBar2" style="padding-left: 50%"><a class="navBar3" href="#home">Home</a></li>
+            <li class="navBar2"><a class="navBar3" href="#platform">Platform</a></li>
+
+        </ul>
+    </header>
+    <div class="siteBody" data-ng-view> <!-- data-ng-view declares this div to be where the .html views will be injected; anything in that piece of html will be inserted directly into this div. -->
+
+
+
+
+
+    </div>
+
+    <footer>
+        <!-- TO DO: A footer for the bottom of each site that provides the same links as the nav-bar, and some other features. -->
+
+        <!------------------------------Should look something like this: -------------------------------------------------------->
+        <!--                                        LOGO                                                                       -->
+        <!--                                        Donate button                                                              --> <!-- donate button links either directly to paypal or another view on this page. -->
+        <!--         HOME PLATFORM ETC                                      Contact info                                       -->
+        <!--                                                                e-mail: ..........                                 -->
+        <!--                                                                phone #: .............                             -->
+        <!--                                                                fb link: ................                          -->
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script> <!-- To use routes, import this. -->
+    <script src="src/Scripts/app.js"></script>
+
+
+</body>
+</html>
