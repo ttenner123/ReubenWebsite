@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <!-- data-ng-app ties the module ("app" in "app.js") to the entire document. This could certainly be moved (i.e. applied to one div, large or small) but for now we'll likely only need the one module. -->
-<html lang="en" data-ng-app="app" >
+<html lang="en" data-ng-app="testApp" >
 <head>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta charset="UTF-8">
     <title>Herfindahl For Senate</title>
     <!-- Include stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity=" sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- TODO: Get favicon based on logo -->
-
 </head>
 <body>
-    <header>
-        <img class="navBarImg" src="Images/ReubenLogo.jpg" alt="logo">
-        <ul class="navBar1">
-            <!-- a 50% left padding is applied to the first link to get it to be on the right side of the screen/image. -->
-            <li class="navBar2" style="padding-left: 50%"><a class="navBar3" href="#home">Home</a></li>
-            <li class="navBar2"><a class="navBar3" href="#platform">Platform</a></li>
+    <div class="containter">
+        <nav class="navbar navbar-primary bg-success">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/platform">Platform</a></li>
+                    <li><a href="#/about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="siteBody" class="container">
+        <img class="navBarImg rounded-circle" src="Images/ReubenLogo.jpg" alt="logo">
+        <div data-ng-view> <!-- data-ng-view declares this div to be where the .html views will be injected; anything in that piece of html will be inserted directly into this div. -->
 
-        </ul>
-    </header>
-    <div class="siteBody" data-ng-view> <!-- data-ng-view declares this div to be where the .html views will be injected; anything in that piece of html will be inserted directly into this div. -->
 
 
 
+
+        </div>
+
+        <div class="footer">
+            <br>
+            <div class="left">
+                Rueben Herfindal
+                <div>Contact Info</div>
+                <div>Email:</div>
+                <div>Phone Number:</div>
+                <div>FB Link: </div>
+            </div>
+            <div class="right">
+                <a href="#/donate">Donate</a>
+            </div>
+        </div>
 
 
     </div>
-
+<!--
     <footer>
+        <div class="footer">
+            <ul class="navBar1">
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/plaform">Platform</a></li>
+                <li><a href="#/about">About</a></li>
+            </ul>
+            <div class="left">
+                Rueben Herfindal
+                <div>Contact Info</div>
+                <div>Email:</div>
+                <div>Phone Number:</div>
+                <div>FB Link: </div>
+            </div>
+            <div class="right">
+                Donate
+            </div>
+        </div>
+    </footer> -->
+
         <!-- TO DO: A footer for the bottom of each site that provides the same links as the nav-bar, and some other features. -->
 
-        <!------------------------------Should look something like this: -------------------------------------------------------->
+        <!-- ................................Should look something like this: ................................................ -->
         <!--                                        LOGO                                                                       -->
         <!--                                        Donate button                                                              --> <!-- donate button links either directly to paypal or another view on this page. -->
         <!--         HOME PLATFORM ETC                                      Contact info                                       -->
         <!--                                                                e-mail: ..........                                 -->
         <!--                                                                phone #: .............                             -->
         <!--                                                                fb link: ................                          -->
-    </footer>
+    
 
-
-
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script> <!-- To use routes, import this. -->
-    <script src="src/Scripts/app.js"></script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

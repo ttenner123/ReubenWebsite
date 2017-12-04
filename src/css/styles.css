@@ -1,88 +1,17 @@
-/*/*************
- Nav bar styles
- *************/
 
-/*************
- Nav bar styles
- *************/
-ul.navBar1 {
-    list-style-type: none; /*Removes bullet points */
-    margin: 0;    /*Removes default formatting*/
-    padding: 0;   /*Removes default formatting*/
-    overflow:hidden; /*Causes the navBar to*/
+#header {
     background-color: #118200;
-    position: fixed; /*Causes this to stay at top of page when user is scrolling*/
-    top: 0; /*Eliminates margin above navBar*/
-    left: 0; /*Eliminates left margin*/
-    width: 100%;
-    /*height: 48px;*/
-    height: 10%;
-    z-index: 1; /*Forces this to cover other elements*/
 }
-li.navBar2 {
-    float:left; /*Allows links to be displayed on one line by allowing block elements to slide next to each other; */
-    /*border-right: 1px solid #bbb;*/
-    margin-top: 1.5%;
-
-}
-a.navBar3 {
-    height: 6%;
-    display: inline-block;
-    color:black;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    vertical-align: middle;
-}
-
-/* LOGO OPTION 1: Looks like it is built into the nav bar; (its size/orientation could certainly be played with */
-/**
 img.navBarImg {
-    z-index: 2; /* z-index of 2 puts this in front of nav bar */
-/**
-    position: fixed;
-    left: 37.5%;
-    width: 12.5%;
-}
-**/
-/* END OF LOGO OPTION 1 */
-
-/* LOGO OPTION 2: Is fixed to the top-left part of page (won't cover content this way) */
-img.navBarImg {
-    z-index: 2;
-    position: fixed;
-    width: 20%;
-    padding: 0;
-    margin: 0;
-}
-/* END OF LOGO OPTION 2 */
-
-li.navBar4 {
-    float:left;
-    display:block;
-    color:black;
-    text-align: center;
-    text-decoration: none;
-    overflow:hidden;
+    width: 15%;
 }
 
-a.navBar3:hover {
-    color: #c0cc00;
+#siteBody {
+    background-color: #b3ffb3;
 }
-
-
-a.navBar3:active {;
-    color:white;
+.left{
+    float: left;
 }
-/********************
-End of nav bar styles
- *******************/
-
-div.siteBody {
-    padding-left: 22%;
-    padding-top: 8%; /* padding to keep the  */
-}
-
-img.mainPic {
-    width: 40%;
+.right{
+    float: right;
 }

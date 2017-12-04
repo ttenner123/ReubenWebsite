@@ -2,10 +2,10 @@
  */
 app.config(function ($routeProvider) {
     $routeProvider
-        .when('/', { //when the URL ends in /, insert the "home.html" view into the div
+        .when('#home', { //when the URL ends in /, insert the "home.html" view into the div
             templateUrl: 'Views/home.html'
         })
-        .when('/platform', { //when the URL ends in /platform, insert the "platform.html" view into the div
+        .when('#platform', { //when the URL ends in /platform, insert the "platform.html" view into the div
             templateUrl: 'Views/platform.html'
         })
 });
