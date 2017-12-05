@@ -13,16 +13,32 @@
 </head>
 <body>
     <div id="siteBody" class="container">
-        <nav class="navbar navbar-primary bg-success">
-            <div class="container">
-                <ul class="nav navbar-nav">
-                    <li><a href="#/home">Home</a></li>
-                    <li><a href="#/platform">Platform</a></li>
-                    <li><a href="#/about">About</a></li>
-                </ul>
+        <div class="navcontainer">
+            <img class="rounded-circle" src="Images/ReubenLogo.jpg" alt="logo">
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#/home">Home</a></li>
+                <li class="navbar-item"><a href="#/plaform">Platform</a></li>
+                <li class="navbar-item"><a href="#/about">About</a></li>
+            </ul>
+        </div>
+        <div class="home-info left">
+            <div class="home-info-name">Reuben Herfindahl</div>
+            <div class="quote">"Quote goes here"</div>
+            <img src="Images/Reuben_Main_Pic.jpg">
+            <div class="home-info-block">
+                This is whatever he wants to write.
             </div>
-        </nav>
-        <img class="navBarImg rounded-circle" src="Images/ReubenLogo.jpg" alt="logo">
+        </div>
+        <div class="home-events right">
+            Events
+            <ul>
+                <li>Event 1: </li>
+                <li>Event 2: </li>
+                <li>Event 3: </li>
+            </ul>
+            More coming soon
+        </div>
+
         <div data-ng-view> <!-- data-ng-view declares this div to be where the .html views will be injected; anything in that piece of html will be inserted directly into this div. -->
 
 
@@ -30,12 +46,9 @@
 
 
         </div>
-
         <div class="footer">
-            <br>
             <div class="left">
-                Rueben Herfindal
-                <div>Contact Info</div>
+                <div class="footer-name">Rueben Herfindahl</div>
                 <div>Email:</div>
                 <div>Phone Number:</div>
                 <div>FB Link: </div>
@@ -47,26 +60,6 @@
 
 
     </div>
-<!--
-    <footer>
-        <div class="footer">
-            <ul class="navBar1">
-                <li><a href="#/home">Home</a></li>
-                <li><a href="#/plaform">Platform</a></li>
-                <li><a href="#/about">About</a></li>
-            </ul>
-            <div class="left">
-                Rueben Herfindal
-                <div>Contact Info</div>
-                <div>Email:</div>
-                <div>Phone Number:</div>
-                <div>FB Link: </div>
-            </div>
-            <div class="right">
-                Donate
-            </div>
-        </div>
-    </footer> -->
 
         <!-- TO DO: A footer for the bottom of each site that provides the same links as the nav-bar, and some other features. -->
 

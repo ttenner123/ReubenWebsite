@@ -1,14 +1,118 @@
+html {
+    height: 100%;  
+}
 
-#header {
+body {
+    background-color: lightgrey;
+    height: 100%;
+}
+
+.container {
+    background-color: white;
+    min-height: 100%;
+    height: auto;
+}
+
+.navcontainer {
+    height: 124px;
+    width: inherit;
+    margin-left: inherit;
     background-color: #118200;
 }
-img.navBarImg {
-    width: 15%;
+
+.navcontainer img {
+    height: 124px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
 
-#siteBody {
-    background-color: #b3ffb3;
+.navbar-menu {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 96px;
+    text-align: center;
+    vertical-align: top;
 }
+
+.navbar-menu li {
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+    height: 35px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.navbar-menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 124px
+    padding: 5px 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer {
+    margin: inherit;
+    padding: inherit;
+    padding-bottom: 10px;
+    width: inherit;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #118200;
+}
+
+.footer .left {
+    color: white;
+    margin-left: 10%;
+}
+
+.footer .right {
+    margin-right: 10%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-name {
+    font-size: 20px;
+}
+
+.home-info {
+    width: 66%;
+}
+.home-info img {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.home-info-name {
+    font-size: 20;
+    text-align: center;
+}
+.home-info .quote{
+    font-style: italic;
+    text-align: center;
+}
+.home-info-block {
+    margin: auto;
+    margin-top: 10px;
+    width: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #118200;
+}
+.home-events {
+    width: 34%;
+}
+
 .left{
     float: left;
 }
